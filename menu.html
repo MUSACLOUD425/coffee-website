@@ -1,0 +1,76 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+    <script src="js/script.js" defer></script>
+    
+    <title>Menu</title> 
+
+    <link rel="stylesheet" type = "text/css" href="css/style2.css">
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Menu |Coffee Emporium</title>
+
+    <meta name="description" content="Explore our full coffee menu: espresso, lattes, cappuccinos, cold brews and fresh pastries. See prices and find your new favourite drink today.">
+
+    <meta name="keywords" content="coffee, coffee shop, espresso, latte, cappuccino, fresh roasted coffee, single-origin coffee, coffee beans">
+
+    <meta name="author" content="Musa Cindi">
+    
+</head> 
+
+<body> 
+
+<header> 
+
+    <img src="images/logo.png" width="60px" height="60px"> 
+
+    <nav> 
+        <a href="home.html">Home</a> 
+        <a href="about.html">About Us</a> 
+        <a href="menu.html">Menu</a> 
+        <a href="gallery.html">Gallery</a> 
+        <a href="contact.html">Contact</a> 
+        <a href="promotions.html">Promotions</a> 
+    </nav> 
+
+</header> 
+<main> 
+    <h1 style="text-align: center;">Our Menu</h1>
+    <p style="text-align: center;">Enjoy our selection of coffee and delicious treats.</p>
+
+    <div class="menu-controls">
+        <input type="text" id="searchBox" placeholder="Search the menu" aria-label="Search the menu">
+
+        <select id="sortBox" aria-label="Sort the menu">
+            <option value="az">Name A to Z</option>
+            <option value="low">Price: low to high</option>
+            <option value="high">Price: high to low</option>
+        </select>
+    </div>
+
+    <div class="menu-group">
+        <h2 style="text-align: center;">Coffee</h2>
+        <p class="menu-item" style="text-align: center;">Cappuccino - R35</p>
+        <p class="menu-item" style="text-align: center;">Affogato - R40</p>
+        <p class="menu-item" style="text-align: center;">Espresso - R25</p>
+        <p class="menu-item" style="text-align: center;">Flat White - R35</p>
+    </div>
+
+    <div class="menu-group">
+        <h2 style="text-align: center;">Specials</h2>
+        <p class="menu-item" style="text-align: center;">Frappuccino - R45</p>
+        <p class="menu-item" style="text-align: center;">Frappuccino Cake - R50</p>
+    </div>
+
+    <p id="noResults"></p>
+</main> 
+<footer style="text-align: center;"> 
+    &copy;ST10502886
+    <p id="dateTime" style="margin: 5px 0 15px;"></p>
+</footer>
+</body> 
+</html>

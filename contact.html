@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "GNfITw3ou99LyOepA",
+        });
+    })();
+    </script>
+
+    <script src="js/script.js" defer></script>
+    
+    <title>Contact Us</title> 
+    
+    <link rel="stylesheet" type="text/css" href="css/style2.css">  
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Coffee Emporium</title>
+
+    <meta name="description" content="Get in touch with us for orders, bulk coffee, catering or any questions. Find our address, opening hours and phone number on this page.">
+
+    <meta name="keywords" content="coffee, coffee shop, espresso, latte, cappuccino, fresh roasted coffee, single-origin coffee, coffee beans">
+
+    <meta name="author" content="Musa Cindi">
+
+</head> 
+
+<body> 
+
+<header> 
+    <img src="images/logo.png" width="60px" height="60px"> 
+
+    <nav> 
+        <a href="home.html">Home</a> 
+        <a href="about.html">About Us</a> 
+        <a href="menu.html">Menu</a> 
+        <a href="gallery.html">Gallery</a> 
+        <a href="contact.html">Contact</a> 
+        <a href="promotions.html">Promotions</a> 
+    </nav> 
+</header> 
+
+<main> 
+
+    <div class="contact-container">
+
+    <div class="contact-details">
+
+        <h2>Our Address</h2>
+        <p>25 De Beer Street, Braamfontein, Johannesburg</p>
+
+        <h2>Phone</h2>
+        <p>082 456 7890</p>
+
+        <h2>Email</h2>
+        <p>coffeeemporium@gmail.com</p>
+
+        <h2>Opening Hours</h2>
+        <p>Monday - Friday: 07:00 - 18:00</p>
+        <p>Saturday - Sunday: 08:00 - 17:00</p>
+
+        <iframe
+            title="Map showing Coffee Emporium at 25 De Beer Street, Braamfontein, Johannesburg"
+            src="https://maps.google.com/maps?q=25%20De%20Beer%20Street%2C%20Braamfontein%2C%20Johannesburg&amp;output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+
+    </div>
+
+
+    <div class="contact-form">
+
+        <h2>Send Us a Message</h2>
+
+        <form id="contactForm" novalidate>
+
+            <input type="text" id="name" name="name" placeholder="Name">
+
+            <div class="input-wrap">
+                <input type="email" id="email" name="email" placeholder="Email">
+                <span class="status-icon"></span>
+            </div>
+
+            <div class="input-wrap">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                <span class="status-icon"></span>
+            </div>
+
+            <input type="text" id="subject" name="subject" placeholder="Subject">
+
+            <textarea id="message" name="message" rows="5" placeholder="Message"></textarea>
+
+            <input type="submit" value="Send Message">
+
+            <p id="formMessage"></p>
+
+        </form>
+
+    </div>
+
+</div>
+
+</main> 
+
+<footer style="text-align: center;"> 
+    &copy;ST10502886
+    <p id="dateTime" style="margin: 5px 0 15px;"></p>
+</footer> 
+
+</body> 
+</html>

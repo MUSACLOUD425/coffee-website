@@ -1,0 +1,222 @@
+body {
+
+    background-color: bisque;
+    background-image: url("../images/background2.png");
+    font-family: Georgia, serif;
+    margin: 0;
+
+}
+
+header {
+
+    background-color: #3e2723;
+    height: 40px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}
+
+header img {
+
+    border-radius: 5px;
+
+}
+
+header img:hover {
+
+    transform: scale(1.1);
+
+}
+
+nav {
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 16px;
+
+}
+
+nav a:hover {
+
+    color: #ffe0b2;
+
+}
+
+main {
+
+    padding: 60px 80px;
+    text-align: center;
+
+}
+
+.welcome {
+
+    margin-bottom: 60px;
+
+}
+
+h1 {
+
+    font-size: 45px;
+    color: #3e2723;
+    margin-bottom: 15px;
+
+}
+
+.welcome p {
+
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 10px auto;
+
+}
+
+
+.home-sections {
+
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-top: 30px;
+
+}
+
+.home-box {
+
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 260px;
+    min-height: 260px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(62, 39, 35, 0.2);
+
+}
+
+.home-box:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(62, 39, 35, 0.3);
+
+}
+
+.home-box h2 {
+
+    color: #3e2723;
+    font-size: 26px;
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #c8a27a;
+
+}
+
+.home-box p {
+
+    font-size: 17px;
+    margin: 18px 0;
+    color: #333;
+
+}
+
+.home-box .button {
+
+    margin-top: 20px;
+
+}
+
+.button {
+
+    display: inline-block;
+    background-color: #3e2723;
+    color: white;
+    padding: 12px 25px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 8px;
+
+}
+
+.button:hover {
+
+    background-color: #6d4c41;
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    header {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    header img {
+        width: 50px;
+        height: 50px;
+    }
+
+    nav {
+        position: static;
+        transform: none;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+        font-size: 15px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .welcome {
+        margin-bottom: 40px;
+    }
+
+    .welcome p {
+        font-size: 16px;
+    }
+
+    .home-sections {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .home-box {
+        width: 80%;
+        min-height: auto;
+        padding: 25px;
+    }
+
+    .home-box h2 {
+        font-size: 23px;
+    }
+
+    .home-box p {
+        font-size: 16px;
+    }
+
+    .button {
+        padding: 10px 20px;
+    }
+
+}
